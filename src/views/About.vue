@@ -8,7 +8,7 @@
     </div>
     <div class="col-md-8" id="personal" >
       <div class="card-body" >
-        <h2 class="card-title" id="heading">About Me</h2>
+        <h2 class="card-title" id="heading">About Me test</h2>
         <p class="card-text">I am a person who works hard. I am a patient and trustworthy person. I enjoy meeting new people even though I am a bit nervous when I do so. I love driving around and seeing the scenery. I am a person who likes to help others where I can. I enjoy coding websites and want to be a web developer one day.</p>
      
       </div>
