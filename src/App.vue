@@ -1,15 +1,34 @@
-<template>
+<template >
   <NavBar />
-  <router-view />
+  <home/>
+ 
+  <router-view /> <br>
+   <about/>
+   <resume/>
+   <br>
+   <br>
+   <br>
+   <br>
+   <Projects/>
+   <skills/>
+   <testimonials />
+   <contact/>
   <footer1 />
 </template>
 
 <script>
 import NavBar from "./components/Navbar.vue";
 import footer1 from "./components/Footer.vue";
+import About from './views/About.vue';
+import Contact from './views/Contact.vue';
+import Testimonials from './views/Testimonials.vue';
+import Projects from './views/Projects.vue'
+import Resume from './views/Resume.vue'
+import Home from './views/Home.vue'
+import Skills from './views/Skills.vue'
 
 export default {
-  components: { NavBar, footer1 },
+  components: { NavBar, footer1, About , Contact, Testimonials, Projects,Resume,Home, Skills},
 };
 </script>
 
@@ -24,19 +43,31 @@ export default {
 
 nav {
   padding: 30px;
-  background-color: blue;
+  /* background-color: blue; */
+  position: sticky !important;
 }
 
 nav a {
   font-weight: bold;
-  color: white;
+  color: white !important;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0c195d !important;
+
 }
 
-nav :hover {
-  color: black;
+/* nav :hover {
+  color: ;
+} */
+
+html {
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(0, 255, 0, 0.3); */
 }
 </style>

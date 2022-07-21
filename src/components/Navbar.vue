@@ -14,34 +14,34 @@
     
     </div>
   </nav> -->
-  <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+  <nav class="navbar navbar-expand-lg bg-light sticky-top" id="navbar">
   <div class="container-fluid">
-    <router-link to="/Home" class="navbar-brand" href="#">Navbar</router-link>
+    <router-link to="/Home" class="navbar-brand" href="#">Mogamat Saleem</router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <router-link to="/Home" class="nav-link active"> <i class="bi bi-house"></i>Home</router-link>
+          <a key="#landing" class="nav-link active"> <i class="bi bi-house"></i>Home</a>
         </li>
         <li class="nav-item">
-           <router-link to="/About" class="nav-link active"><i class="bi bi-person-badge"></i>About</router-link>
+           <a href="#about" class="nav-link active"><i class="bi bi-person-badge"></i>About</a>
         </li>
         <li class="nav-item">
-           <router-link to="/Resume" class="nav-link active"><i class="bi bi-person-lines-fill"></i>Resumé</router-link>
+           <a href="#resume" class="nav-link active"><i class="bi bi-person-lines-fill"></i>Resumé</a>
         </li>
         <li class="nav-item">
-           <router-link to="/Services" class="nav-link active"><i class="bi bi-card-text"></i>Service</router-link>
+           <a class="nav-link active"><i class="bi bi-card-text"></i>Service</a>
         </li>
         <li class="nav-item">
-           <router-link to="/Services" class="nav-link active"><i class="bi bi-image"></i>Projects</router-link>
+           <a href="#pro" class="nav-link active"><i class="bi bi-image"></i>Projects</a>
         </li>
         <li class="nav-item">
-           <router-link to="/Testimonials" class="nav-link active"><i class="bi bi-card-text"></i>Testimonials</router-link>
+           <a href="#test" class="nav-link active"><i class="bi bi-card-text"></i>Testimonials</a>
         </li>
          <li class="nav-item">
-           <router-link to="/Contacts" class="nav-link active"><i class="bi bi-telephone-forward"></i>contacts</router-link>
+           <a href="#con" class="nav-link active"><i class="bi bi-telephone-forward"></i>contacts</a>
         </li>
         
       </ul>
@@ -58,14 +58,18 @@ export default {
 
 <style scoped>
  #navbar{
-  background-color: blue !important; 
+  background-color: #f80d4f !important;
+  /* position: sticky !important; */
+  /* justify-content: end; */
+
+
  }
 
  #navbar :hover {
-  color: white;
+  color: #0c195d !important;
  }
 
  #navbar a :active{
-  color: white;
+  color:white !important ;
  }
 </style>
