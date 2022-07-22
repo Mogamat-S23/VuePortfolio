@@ -94,7 +94,7 @@
               id="floatingTextarea2"
               style="height: 100px"
             ></textarea>
-            <label class="text-dark" for="floatingTextarea2">Comments</label>
+            <label class="text-dark" for="floatingTextarea2">How Can I Help ?</label>
           </div>
         </div>
       </div>
@@ -106,6 +106,7 @@
             type="submit"
             value="Submit"
             class="btn btn-outline-light "
+            
           />
         </div>
       </div>
@@ -138,6 +139,19 @@ export default {};
 
 #bgform{
    background: #0c195d;
+
+}
+
+input[type=submit]:hover{
+background-color: #f80d4f;
+color: white;
+}
+
+#con{
+  scroll-margin: 185px;
+}
+h2{
+  text-decoration: underline;
 }
 /* @media screen and (max-width: 425px) {
   .label-to-right {

@@ -34,10 +34,12 @@ export default {
  #reserve{
     color: white;
  }
-
+#footer a{
+  padding: 10px;
+}
  #ref:hover {
 
-color: #f80d4f;
+color:#f80d4f ;
  }
 
  #ref{

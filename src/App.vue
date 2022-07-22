@@ -1,16 +1,29 @@
 <template >
   <NavBar />
-  <home/>
+  <home/> 
  
-  <router-view /> <br>
+   <br>
    <about/>
+   <br>
+   <br>
+   <br>
+   <br>
    <resume/>
    <br>
    <br>
    <br>
    <br>
-   <Projects/>
    <skills/>
+<br>
+   <br>
+   <br>
+   <br>
+
+   <Projects/>
+   <br>
+   <br>
+   <br>
+   <br>
    <testimonials />
    <contact/>
   <footer1 />

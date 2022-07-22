@@ -108,6 +108,9 @@ export default {
 </script>
 
 <style scoped>
+#resume{
+    scroll-margin: 50px;
+}
 .experience-container {
   border-left: 3px solid #f80d4f;
   padding-left: 20px !important;
@@ -138,6 +141,7 @@ h3 {
   color: white;
   background: #f80d4f;
   /* margin-left: 250px; */
+  width: 150px;
 }
 i,
 li {

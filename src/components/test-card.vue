@@ -3,11 +3,11 @@
   <div v-for="test in testimonials" class="card py-3 m-3 mx-auto">
     <div class="row">
       <div class="col-6 mx-auto">
-        <img class="img-fluid" :src="test.image" alt="" id="image" />
+        <img class="img-fluid"  :src="test.image" alt="" id="image" />
       </div>
       <div class="col-6 my-auto text-start">
         <h2>{{ test.name }} {{ test.surname }}</h2>
-        <p>{{ test.about }}</p>
+        <p>"{{ test.about }}"</p>
         <br />
         <h4>~ {{ test.title }}</h4>
       </div>
@@ -37,6 +37,7 @@ export default {
 }
 #image {
   width: 200px;
+  /* border-radius: 50%; */
   
 }
 

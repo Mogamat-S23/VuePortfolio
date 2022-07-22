@@ -1,6 +1,6 @@
 <template>
      <div id="landing">
-        <h1 class="front"> Mogamat Saleem</h1>
+        <h1 class="front"> Mogamat Saleem Ariefdien</h1>
     <!-- <h2 class="front1"> Aspiring Web Developer</h2> --> 
     <span v-for="(text, idx) in message" :key="idx" :style="`--i: ${idx};`" class="text">{{text}}</span>
      

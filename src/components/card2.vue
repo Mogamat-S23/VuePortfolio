@@ -1,5 +1,5 @@
 <template>
-  <div  v-for="test in projects.project" class="card py-3 m-3 mx-auto">
+  <div  v-for="(test, index) in projects.photoshop" :key="test.id" class="card py-3 m-3 mx-auto">
     <div class="row">
       <div class="col-6 mx-auto">
         <img class="img-fluid" :src="test.img" alt="" id="image" />
@@ -8,12 +8,11 @@
         <h2>{{ test.name }}</h2>
         <h5>Made using</h5>
         <h4>~ {{test.category}}</h4>
-        <a target="_blank" :href="test.github"
-          ><i class="bi bi-github icons"></i
-        ></a>
-        <a target="_blank" :href="test.live"
-          ><i class="bi bi-link icons"></i
-        ></a>
+        <a  :id="index" :href="test.img"  target="_blank" 
+          ><i class="bi bi-binoculars icons"></i></a>
+        <!-- <a class="btn" target="_blank" :href="test.live"
+          ><i class="bi bi-link"></i
+        ></a>  -->
         <br />
         
       </div>
@@ -63,9 +62,7 @@ export default {
     /* color: white; */
     transition: all 1s ease;
 }
-.row a{
-    padding: 10px;
-}
+
 
 #image {
   width: 200px;
@@ -76,7 +73,8 @@ export default {
   padding: 7px 10px 7px 10px;
   font-size: 1em;
   border-radius: 10%;
-  /* margin: 10%; */
+  
+  margin: 10%;
 }
 .icons:hover {
   background-color: #0c195d;

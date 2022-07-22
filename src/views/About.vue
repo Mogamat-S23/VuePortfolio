@@ -4,7 +4,7 @@
     <div id="about" class="card mb-3" style="max-width: 100%;" >
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="../assets/Saleem.jpg" id="me" class="img-fluid rounded-start" alt="me" style="max-height: 100%;">
+      <img src="../assets/Saleem.jpg" id="me" class="img-fluid rounded-start" alt="me" style="max-height: 90%;  ">
     </div>
     <div class="col-md-8" id="personal" >
       <div class="card-body" >
@@ -20,19 +20,21 @@
                       <li>
                         Date of birth: 18/03/1998</li>
                       <li>Gender: Male</li>
-                      <li>Location: Maneburge</li>
+                      <li>Location: Manenberg</li>
                       <li>Cell Phone number: 0768348979</li>
                       <li>Email Address: saleemariefdien@gmail.com</li>
                       <li>Drivers licence: Yes</li>
                       <li>Willing to Relocate: No</li>
-                      <li>GitHub: https://github.com/Mogamat-S23</li>
-                      <li>LinkedIn: linkedin.com/in/mogamat-saleem-ariefdien-808966196</li>
+                      <!-- <li>
+                        <a href="https://github.com/Mogamat-S23" target="_blank">Github</a>
+                      </li>
+                      <li>LinkedIn: linkedin.com/in/mogamat-saleem-ariefdien-808966196</li> -->
                      </ul></p>
      
       </div>
     </div>
     <br>
-    <div class="row">
+    <div class="row" id="skillrow">
       <div class="col-6">
         <h2 id="heading">Technical Skills</h2>
         <ul style="list-style: none;">
@@ -90,14 +92,14 @@
                   </div>
                   <div>
                     <p class="d-flex justify-content-between">
-                      Bootstrap <span>70%</span>
+                      Bootstrap <span>85%</span>
                     </p>
                     <div class="progress">
                       <div
                         class="progress-bar progress-bar-animated progress-bar-striped" id="progress"
                         role="progressbar"
-                        style="width: 70%"
-                        aria-valuenow="70"
+                        style="width: 85%"
+                        aria-valuenow="85"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -122,55 +124,60 @@
     </div>
     </div>
 
-    
+  </div  >
   </div>
 </div>
-  </div>
+  
 </template>
 
 <style scoped>
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-#progress{
-   background-color: #f80d4f; 
-    
+#progress {
+  background-color: #f80d4f;
 }
 
-#bar{
+#bar {
   margin-left: 15%;
 }
 
-#about{
+#about {
   border-color: blue;
+  scroll-margin: 55px;
 }
-
-
 
 #heading {
   text-decoration: underline !important;
   color: white !important;
 }
 
-#personal{
+#personal {
   /* background-image: url(../assets/theview.jpg); */
   /* object-fit: cover; */
   background-repeat: no-repeat !important;
   background-size: cover;
   padding: 5px !important;
   color: white !important;
-  
-  
 }
 
-#about{
+#about {
   background-image: url(../assets/High.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
 }
 
+#me {
+  margin-top: 10%;
+}
 
+#skillrow{
+  padding: 30px 0;
+}
+#skillrow ul li{
+  padding: 2px 0;
+}
 </style>

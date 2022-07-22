@@ -14,16 +14,17 @@
     
     </div>
   </nav> -->
-  <nav class="navbar navbar-expand-lg bg-light sticky-top" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-light sticky-top" id="navbar">
   <div class="container-fluid">
-    <router-link to="/Home" class="navbar-brand" href="#">Mogamat Saleem</router-link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <router-link to="/Home" class="navbar-brand" href="#">Mogamat Saleem Ariefdien</router-link>
+    <button class="navbar-toggler" type="button"  
+      aria-label="Toggle navigation" @click="toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-end"  :class="{show:opened}" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a key="#landing" class="nav-link active"> <i class="bi bi-house"></i>Home</a>
+          <a key="#landing" href="#landing" class="nav-link active"> <i class="bi bi-house"></i>Home</a>
         </li>
         <li class="nav-item">
            <a href="#about" class="nav-link active"><i class="bi bi-person-badge"></i>About</a>
@@ -32,7 +33,7 @@
            <a href="#resume" class="nav-link active"><i class="bi bi-person-lines-fill"></i>Resumé</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link active"><i class="bi bi-card-text"></i>Service</a>
+           <a  href="#skills" class="nav-link active"><i class="bi bi-card-text"></i>Service</a>
         </li>
         <li class="nav-item">
            <a href="#pro" class="nav-link active"><i class="bi bi-image"></i>Projects</a>
@@ -52,7 +53,20 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+       opened:false,
+    }
+   
+  },
+  methods:{
+    toggler(){
+      this.opened = !this.opened
+    },
+    togglerClose(){
+      this.opened = this.opened
+    }
+  }
 }
 </script>
 

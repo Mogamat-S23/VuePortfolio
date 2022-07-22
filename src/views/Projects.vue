@@ -5,14 +5,16 @@
         <!-- <div class="col-4"> -->
             <Projects/>
         <!-- </div> -->
+        <Card2 />
     </div>
   </div>
 </template>
 
 <script>
  import Projects from '@/components/projects-card.vue'
+import Card2 from '@/components/card2.vue'
 export default {
-    components: {Projects}
+    components: {Projects, Card2}
 }
 </script>
 
@@ -22,5 +24,8 @@ export default {
     text-decoration: underline;
   }
 
+#pro{
+    scroll-margin: 100px;
+}
   
 </style>
