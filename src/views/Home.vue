@@ -78,6 +78,13 @@ export default {
   }
 }
 
+@media screen and (max-width:400px) {
+  .text {
+  margin: 38px 0;
+  font-size: 47px;
+  /* margin-top: 3%; */
+}
+}
 
 
 

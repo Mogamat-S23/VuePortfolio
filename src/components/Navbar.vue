@@ -14,7 +14,8 @@
     
     </div>
   </nav> -->
-  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-light sticky-top" id="navbar">
+  <nav class="navbar navbar-expand-lg  bg-light sticky-top" id="navbar">
+  <!-- <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-light sticky-top" id="navbar"> -->
   <div class="container-fluid">
     <router-link to="/Home" class="navbar-brand" href="#">Mogamat Saleem Ariefdien</router-link>
     <button class="navbar-toggler" type="button"  
