@@ -16,7 +16,7 @@
 export default {
    data() {
     return {
-      message: 'Aspiring Web Developerrr', 
+      message: 'Aspiring Web Developer', 
       
     };
   },
