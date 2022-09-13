@@ -1,9 +1,8 @@
 <template>
-  <div class="about">
-    
-    <div id="about" class="card mb-3" style="max-width: 100%;" >
+  <div  id="about" class="about">
+    <div class="container mx-auto p-2 mb-3">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-4 my-auto">
       <img src="../assets/Saleem.jpg" id="me" class="img-fluid rounded-start" alt="me" style="max-height: 90%;  ">
     </div>
     <div class="col-md-8" id="personal" >
@@ -131,10 +130,10 @@
 </template>
 
 <style scoped>
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 #progress {
   background-color: #f80d4f;
@@ -147,6 +146,7 @@
 #about {
   border-color: blue;
   scroll-margin: 55px;
+  overflow-x: hidden;
 }
 
 #heading {
@@ -174,10 +174,10 @@
   margin-top: 10%;
 }
 
-#skillrow{
+#skillrow {
   padding: 30px 0;
 }
-#skillrow ul li{
+#skillrow ul li {
   padding: 2px 0;
 }
 </style>

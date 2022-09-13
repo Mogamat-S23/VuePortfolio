@@ -2,7 +2,7 @@
   <NavBar />
   <home/> 
  
-   <br>
+   <!-- <br> -->
    <about/>
    <br>
    <br>
